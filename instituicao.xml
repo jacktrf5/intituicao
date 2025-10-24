@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Tempo de geração: 21/10/2025 às 21:48
+- Versão do servidor: 10.4.28-MariaDB
+- Versão do PHP: 8.0.28
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="instituicao" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="instituicao">
+                CREATE TABLE `instituicao` (
+                  `id_unidade` int(11) NOT NULL AUTO_INCREMENT,
+                  `nome_unidade` varchar(100) NOT NULL DEFAULT 'Unidade',
+                  `descricao_unidade` varchar(30) DEFAULT NULL,
+                  `sigla_unidade` varchar(4) DEFAULT NULL,
+                  PRIMARY KEY (`id_unidade`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Banco de dados: 'instituicao'
+    -->
+    <database name="instituicao">
+        <!-- Tabela instituicao -->
+        <table name="instituicao">
+            <column name="id_unidade">1</column>
+            <column name="nome_unidade">JFAL</column>
+            <column name="descricao_unidade">NULL</column>
+            <column name="sigla_unidade">NULL</column>
+        </table>
+        <table name="instituicao">
+            <column name="id_unidade">2</column>
+            <column name="nome_unidade">JFCE</column>
+            <column name="descricao_unidade">NULL</column>
+            <column name="sigla_unidade">NULL</column>
+        </table>
+        <table name="instituicao">
+            <column name="id_unidade">3</column>
+            <column name="nome_unidade">JFPB</column>
+            <column name="descricao_unidade">NULL</column>
+            <column name="sigla_unidade">NULL</column>
+        </table>
+        <table name="instituicao">
+            <column name="id_unidade">4</column>
+            <column name="nome_unidade">JFPE</column>
+            <column name="descricao_unidade">NULL</column>
+            <column name="sigla_unidade">NULL</column>
+        </table>
+        <table name="instituicao">
+            <column name="id_unidade">5</column>
+            <column name="nome_unidade">JFRN</column>
+            <column name="descricao_unidade">NULL</column>
+            <column name="sigla_unidade">NULL</column>
+        </table>
+    </database>
+</pma_xml_export>
